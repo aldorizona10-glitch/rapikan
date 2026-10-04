@@ -33,8 +33,9 @@ request) and stores nothing on a server. Open it while signed in to claude.ai, c
 
 ## How it's built
 
-- **Single self-contained page** — plain HTML/CSS/JavaScript, no build step, no dependencies,
-  no backend. All state stays in the browser.
+- **No framework, no build step** — plain HTML, CSS, and JavaScript (`rapikan.html` +
+  `styles.css` + `app.js`), no dependencies, no backend. All state stays in the browser.
+  (The live demo above is served as a single self-contained page.)
 - **Structured output** — one uniform JSON contract (`title`, `confidence`, `fields[]` with a
   `source` quote each, optional `table`, optional `draft`, `flags[]`) is requested from the model
   and rendered by a single view, so every workflow shares the same reviewable shape.
