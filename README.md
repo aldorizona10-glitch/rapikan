@@ -14,11 +14,13 @@ inventing them; and keep a human in the loop.**
 
 ## ▶️ Live demo
 
-**https://claude.ai/code/artifact/fc3ef796-3760-4435-bc63-568264d157ea**
+**https://aldorizona10-glitch.github.io/rapikan/**
 
-The live app runs the LLM on the viewer's own Claude account (it asks permission on the first
-request) and stores nothing on a server. Open it while signed in to claude.ai, click
-**Load example → Structure it**, and watch it work.
+Open it and click **Load example → Structure it** — **Demo mode** shows a real structured result
+instantly, with no sign-in and no key required. To structure *your own* text, either add your own
+**Anthropic API key** (stored only in your browser, sent only to `api.anthropic.com`) or open the
+page signed in to **claude.ai** (it then runs on your own Claude account). Nothing is stored on a
+server either way.
 
 ## What it does
 
@@ -42,7 +44,7 @@ request) and stores nothing on a server. Open it while signed in to claude.ai, c
 - **Evidence grounding** — the prompt requires each extracted value to carry a verbatim quote
   from the input, and inferred values are labelled rather than presented as fact.
 - **Approval gate** — drafted messages are shown as editable `DRAFT`s; nothing is auto-sent.
-- **Graceful degradation** — if the LLM runtime isn't available (e.g. opened outside claude.ai),
+- **Runs anywhere** — Demo mode gives instant sample results with no key; add an Anthropic API key (browser-only) or open on claude.ai for live structuring of your own text.
   the UI still loads and explains where to run it.
 - **Accessible & themed** — full light/dark theming (system + manual toggle), keyboard focus
   states, and `prefers-reduced-motion` support.
